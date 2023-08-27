@@ -1,6 +1,8 @@
 import exp from 'express';
 import corsx from 'cors';
 
+import { fileRouter } from '../routes/files';
+
 const app = exp();
 
 const corsOptions = {
@@ -11,8 +13,6 @@ const corsOptions = {
 
 app.use( corsx( corsOptions ) );
 app.use(exp.json( { limit: '50mb' } ));
-app.get('/', (req, res) => { 
-    res.send('Hello World!');
-});
+app.use('/files/data', fileRouter);
 
 export default app;

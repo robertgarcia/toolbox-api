@@ -7,9 +7,10 @@ services:
     #   target: base
     volumes:
       - ./src:/app/src/
+      - ./nodemon.json:/app/nodemon.json
     container_name: toolbox-api
     expose:
-      - '3000'
+      - '8888'
     ports:
-      - '3000:3000'
+      - '8888:8888'
     command: npm run dev

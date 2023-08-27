@@ -1,0 +1,12 @@
+{
+    "verbose": true,
+    "ignore": [
+        "**/*.test.js",
+        "**/*.spec.js",
+        ".git",
+        "node_modules"
+    ],
+    "watch": ["src/**/*.js"],
+    "ext": "js",
+    "exec": "node --es-module-specifier-resolution=node src/index.js"
+  }

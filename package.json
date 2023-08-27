@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "node --es-module-specifier-resolution=node src/index.js",
+    "start": "node --es-module-specifier-resolution=node src/index.js node src/index.js",
+    "dev": "nodemon exec --legacy-watch",
     "test": "test"
   },
   "repository": {
@@ -35,6 +35,7 @@
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-n": "^16.0.2",
-    "eslint-plugin-promise": "^6.1.1"
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^3.0.1"
   }
 }

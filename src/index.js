@@ -1,7 +1,7 @@
 import dot from 'dotenv';
 import * as http from 'http';
 
-import app from './utils/app';
+import app from './middlewares/app';
 
 // Implements configurations globals
 dot.config();

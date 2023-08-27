@@ -9,7 +9,7 @@ dot.config();
 // Creamos la instancia en local
 const serverLocal = http.createServer(app);
 
-serverLocal.listen( process.env.PORT || 3000, () => {
+serverLocal.listen( process.env.PORT || 8888, () => {
     console.log(`Server is listening on port ${ process.env.PORT } || Environment: ${ process.env.NODE_ENV }`);
 });
 

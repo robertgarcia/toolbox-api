@@ -21,7 +21,7 @@ const getFileById = async (id) => {
     })
     return { data, status }
   } catch (err) {
-    return { data: null, status: err.response.status }
+    return { data: err.message, status: err.response.status }
   }
 }
 

@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import { describe, before, it } from 'mocha'
+import { describe, it } from 'mocha'
 import formatFileCSV from '../../src/utils/formatter'
 
 describe('formatFileCSV', () => {

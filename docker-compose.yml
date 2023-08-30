@@ -13,4 +13,4 @@ services:
       - '8888'
     ports:
       - '8888:8888'
-    command: npm run dev
+    command: npm run start
